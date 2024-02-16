@@ -1,0 +1,103 @@
+header {
+    background: url(images/central_park.jpg) 0 -200px no-repeat;  /* place image as background */
+    background-size: 1500px;
+    /*background-position: 0 -200px;*/
+    /*background-repeat: no-repeat;*/
+    height: 400px; /* give header some height to display the background image */
+    padding-top: 100px;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px;
+  }
+  li a {
+    text-decoration: none; /* Remove Underline */
+  }
+  li a:link {
+    color: #000; /* Before Click */
+  }
+  li a:visited {
+    color:#818db3; /* After Click */
+  }
+  li a:hover {
+    color:#333; /* Mouse Over */
+  }
+  li a:active {
+    color:#753a30; /* Mouse Down */
+  }
+  nav {
+    background-color:rgb(255, 245, 238);
+    height: 50px;
+    text-align: center;
+    padding-top: 2px;
+  }
+  main {
+    margin: 50px;
+  }
+  main h1 {
+    color:rgb(129, 141, 179);
+    font-family: arial
+  }
+  footer {
+    height: 40px;
+    background-color:rgb(129, 141, 179);
+    text-align: center;
+    padding-top: 20px;
+    color:rgb(211, 218, 240);
+  }
+  /* Responsive styles less than 600px*/
+  
+@media only screen and (max-width: 600px) {
+  header {
+    background-size: cover;
+    height: 200px;
+    padding: 50px 20px;
+    font-size: 36px;
+  }
+
+  nav ul {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  main {
+    margin: 20px;
+  }
+
+  .cards {
+    display: block; /* Stack cards vertically */
+  }
+
+  .card {
+    margin-bottom: 20px;
+    width: 100%; /* Ensure cards take full width */
+  }
+
+  footer {
+    padding-top: 10px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: calc(50% - 20px); /* Adjust margin */
+    margin-bottom: 20px;
+  }
+}
